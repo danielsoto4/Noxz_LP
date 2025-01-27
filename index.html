@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>enoxz</title>
+    <link rel="stylesheet" href="css/style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@400;500;600;700&display=swap" rel="stylesheet">
+
+</head>
+<body>
+    <header>
+        <div class="logo-container">
+            <img src="media/logo.png" alt="Logo" class="logo">
+            <div class="play-pause">
+                <span>Play</span>
+                <span class="pause">Pause</span> 
+            </div>
+        </div>
+        
+        <div class="auth-links">
+            <a href="#" class="login">Log In</a>
+            <span>|</span>
+            <a href="#" class="signup">Sign Up</a>
+        </div>
+
+
+    
+    </header>
+    <main>
+        <div class="content">
+            <div class="title-container">
+                <h1 class="title">Noxz*</h1>
+                <h2 class="subtitle">London</h2>
+            </div>
+            <p class="description">Is a London based musician, producer and audiophile.
+                Creates lush, contemporary instrumentals that reverberate with retro influences</p>
+        </div>
+    </main>
+    
+    <div class="profile">
+        <img src="media/profile.png" alt="Imagen de perfil">
+    </div>
+
+    <div class="nine-lines">
+        <p class="line-1">Soul</p>
+        <p class="line-2">Soulful</p>
+        <p class="line-3">Soulful Beats</p>
+        <p class="line-4">R&Bs</p>
+        <p class="line-5">R&B Vibes</p>
+        <p class="line-6">Jazzy</p>
+        <p class="line-7">Jazzy Licks</p>
+        <p class="line-8">Boom Baps</p>
+        <p class="line-9">Baps</p>
+    </div>
+
+    <div class="music-player">
+        <div class="album-art">
+            <img src="media/default-album.png" alt="Album Art" id="album-image">
+        </div>
+        <div class="track-info">
+            <p id="track-name">No Song Playing</p>
+            <div class="progress-container">
+                <input type="range" id="progress-bar" min="0" max="100" value="0">
+                <span id="current-time">0:00</span> 
+            </div>
+        </div>
+        <div class="controls">
+            <button id="prev-btn">⏮️</button>
+            <button id="play-pause-btn">▶️</button>
+            <button id="next-btn">⏭️</button>
+        </div>
+        <canvas id="audio-visualizer"></canvas>
+        <audio id="audio-player"></audio>
+    </div>
+    
+    <div class="logo-container-bottom">
+        <img src="media/logo.png" alt="Logo" class="logo">
+        <div class="play-pause">
+            <span>Play</span>
+            <span class="pause">Pause</span> 
+        </div>
+    </div>
+    
+    
+<script src="js/main.js"></script>    
+    
+</body>
+</html>

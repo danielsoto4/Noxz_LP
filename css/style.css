@@ -1,0 +1,294 @@
+body {
+    margin: 0;
+    padding: 0;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+    align-items: center;
+    height: 100vh;
+    overflow: hidden;
+    background: linear-gradient(to right, #7a828c, #3b444f);
+    font-family: 'Space Grotesk', sans-serif;
+}
+
+header {
+    position: absolute;
+    top: 20px;
+    left: 20px;
+    display: flex;
+    align-items: center;
+}
+
+.auth-links {
+    position: fixed;
+    right: 40px;
+    display: flex;
+    flex-direction: row;
+    gap: 10px;
+    font-size: 1.5rem;
+    font-weight: 500;
+    color: #fff;
+    text-align: center;
+}
+
+.auth-links a {
+    text-decoration: none;
+    color: #fff;
+    transition: color 0.3s ease;
+}
+
+.auth-links a:hover {
+    color: #ffcc00;
+}
+
+.auth-links span {
+    color: #aaa;
+}
+
+.logo-container {
+    display: flex;
+    align-items: center;
+}
+
+.logo {
+    width: 80px;
+    height: auto;
+    transform: rotate(-90deg);
+    margin-right: -10px;
+}
+
+.play-pause {
+    font-size: 2rem;
+    color: #fff;
+    text-align: left;
+    line-height: 1.2;
+}
+
+.play-pause span {
+    display: block;
+}
+
+.pause {
+    text-decoration: underline;
+}
+
+.profile img {
+    width: 800px;
+    height: auto;
+    margin-bottom: -5px;
+}
+
+main {
+    position: absolute;
+    top: 10%;
+    left: 20px;
+    transform: translateY(-50%);
+    text-align: left;
+}
+
+.content {
+    position: absolute;
+    top: 30%;
+    left: 20px;
+    color: #fff;
+}
+
+.title-container {
+    margin: 0;
+}
+
+.title {
+    font-size: 15rem;
+    font-weight: 700;
+    margin: 0;
+}
+
+.subtitle {
+    font-size: 8rem;
+    font-weight: 400;
+    margin: -50px 0 0 0;
+}
+
+.description {
+    font-size: 1.5rem;
+    margin-top: 5px;
+    line-height: 1.6;
+}
+
+.nine-lines {
+    position: absolute;
+    right: 400px;
+    top: 42%;
+    transform: translateY(-50%);
+    font-size: 2.9rem;
+    font-weight: 100;
+    color: #fff;
+    text-align: left;
+}
+
+.nine-lines p {
+    position: relative;
+    margin: 0;
+    padding: 0;
+}
+
+.line-1 {
+    left: 0px;
+    top: 0px;
+}
+
+.line-2 {
+    left: 0px;
+    top: 10px;
+}
+
+.line-3 {
+    left: 0px;
+    top: 20px;
+}
+
+.line-4 {
+    left: 175px;
+    top: 30px;
+}
+
+.line-5 {
+    left: 175px;
+    top: 40px;
+}
+
+.line-6 {
+    left: 275px;
+    top: 50px;
+}
+
+.line-7 {
+    left: 275px;
+    top: 60px;
+}
+
+.line-8 {
+    left: 410px;
+    top: 70px;
+}
+
+.line-9 {
+    left: 548px;
+    top: 80px;
+}
+
+.music-player {
+    position: fixed;
+    bottom: 90px;
+    left: 40px;
+    background: linear-gradient(135deg, #1f1c2c, #928dab);
+    padding: 20px;
+    border-radius: 20px;
+    display: flex;
+    align-items: center;
+    gap: 20px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.5);
+    width: 40%;
+    max-width: 600px;
+}
+
+.album-art img {
+    width: 80px;
+    height: 80px;
+    border-radius: 10px;
+    object-fit: cover;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.3);
+}
+
+.track-info {
+    flex-grow: 1;
+    color: #fff;
+    font-size: 1rem;
+}
+
+.track-info p {
+    margin: 0;
+    font-weight: bold;
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+}
+
+.progress-container {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+
+#progress-bar {
+    width: 100%;
+    appearance: none;
+    height: 5px;
+    background: #555;
+    border-radius: 5px;
+    outline: none;
+}
+
+#progress-bar::-webkit-slider-thumb {
+    appearance: none;
+    width: 12px;
+    height: 12px;
+    background: #ffffff;
+    border-radius: 50%;
+    cursor: pointer;
+}
+
+.controls {
+    display: flex;
+    gap: 0px;
+}
+
+.controls button {
+    background: none;
+    border: none;
+    font-size: 1.5rem;
+    cursor: pointer;
+    color: #fff;
+    transition: transform 0.2s ease, color 0.2s ease;
+}
+
+.controls button:hover {
+    color: #ffffff;
+    transform: scale(1.2);
+}
+
+#audio-visualizer {
+    position: absolute;
+    bottom: -70px;
+    left: 0;
+    width: 100%;
+    height: 50px;
+}
+
+.logo-container-bottom {
+    position: fixed;
+    bottom: 150px;
+    right: 600px;
+    display: flex;
+    align-items: center;
+    z-index: 10;
+}
+
+.logo-container-bottom .logo {
+    width: 360px;
+    height: auto;
+    transform: rotate(-90deg);
+    margin-right: -50px;
+}
+
+.logo-container-bottom .play-pause {
+    font-size: 1.8rem;
+    color: #fff;
+    text-align: left;
+    line-height: 1.2;
+    margin-left: -50px;
+}
+
+.logo-container-bottom .pause {
+    text-decoration: underline;
+}
